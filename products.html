@@ -5,17 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Products - AQIZO International</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- Top Bar -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container d-flex justify-content-between">
+            <div class="contact-info">
+                <a href="mailto:aqizointernational11@gmail.com"><i class="fas fa-envelope me-2"></i>aqizointernational11@gmail.com</a>
+            </div>
+            <div class="contact-info">
+                <a href="tel:+918487027771"><i class="fas fa-phone me-2"></i>Call Us: +91 84870 27771</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="AQIZO International Logo" style="height: 50px;">
+                <img src="images/logo.png" alt="AQIZO International Logo" class="navbar-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -35,176 +48,394 @@
     <!-- Page Header -->
     <header class="page-header">
         <div class="container">
-            <h1 class="display-4 fw-bold">Our Products</h1>
-            <p class="lead">Premium quality rice and spices, sourced for global markets.</p>
+            <h1 class="display-4 fw-bold" data-aos="fade-up">Our Products</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">Premium quality rice and spices, sourced for global markets.</p>
         </div>
     </header>
 
-    <!-- Products Section -->
-    <section class="products-section py-5">
+    <!-- Rice Products Section -->
+    <section id="rice" class="py-5 bg-light">
         <div class="container">
-            <!-- Rice Varietals -->
-            <h2 class="fw-bold text-center mb-4">Our Rice Selection</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card h-100">
-                        <a href="#1121-basmati" class="text-decoration-none text-dark">
-                            <div class="product-body text-center p-4">
-                                <h5 class="product-title">1121 Basmati Rice</h5>
-                                <p class="product-text">Premium long-grain rice available in Steam, Sella, and Raw varieties.</p>
-                            </div>
-                        </a>
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Premium Rice Varieties</h2>
+                <div class="title-divider"></div>
+                <p class="lead">Experience the finest selection of Indian rice, known for quality and taste worldwide</p>
+            </div>
+
+            <div class="row">
+                <!-- 1121 Basmati Rice -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="card h-100 product-card">
+                        <div class="product-image-container">
+                            <img src="images/1121-basmati.jpg" class="card-img-top" alt="1121 Basmati Rice">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">1121 Basmati Rice</h3>
+                            <p class="card-text">Ultra-long grains, naturally aromatic, and beautifully non-sticky. Preferred for Middle Eastern cuisine and premium markets.</p>
+                            <a href="#contact" class="btn btn-outline-primary">Inquire Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card h-100">
-                        <a href="#pusa-basmati" class="text-decoration-none text-dark">
-                            <div class="product-body text-center p-4">
-                                <h5 class="product-title">Pusa Basmati Rice</h5>
-                                <p class="product-text">A high-quality hybrid variant known for its aroma and long grains.</p>
-                            </div>
-                        </a>
+
+                <!-- 1509 Basmati Rice -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 product-card">
+                        <div class="product-image-container">
+                            <img src="images/1509-basmati.jpg" class="card-img-top" alt="1509 Basmati Rice">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">1509 Basmati Rice</h3>
+                            <p class="card-text">Early-maturing basmati with long grains, delicate aroma, and soft texture. Ideal for daily meals and light biryani dishes.</p>
+                            <a href="#contact" class="btn btn-outline-primary">Inquire Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card h-100">
-                        <a href="#sona-masoori" class="text-decoration-none text-dark">
-                            <div class="product-body text-center p-4">
-                                <h5 class="product-title">Sona Masoori Rice</h5>
-                                <p class="product-text">Lightweight and aromatic medium-grain rice, ideal for daily meals.</p>
-                            </div>
-                        </a>
+
+                <!-- JEERAKSHALA -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 product-card">
+                        <div class="product-image-container">
+                            <img src="images/jeerarice.jpg" class="card-img-top" alt="1509 Basmati Rice">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">JEERAKASHALA</h3>
+                            <p class="card-text">A premium short-grain rice native to Kerala, known for its unique aroma, soft
+                                texture, and quick cooking. Perfect for traditional dishes like Malabar biryani, ghee
+                                rice, and festive meals. Small in size but rich in flavor</p>
+                            <a href="#contact" class="btn btn-outline-primary">Inquire Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card h-100">
-                        <a href="#jeerakashala" class="text-decoration-none text-dark">
-                            <div class="product-body text-center p-4">
-                                <h5 class="product-title">Jeerakashala Rice</h5>
-                                <p class="product-text">A unique, short-grain aromatic rice, popular in various regional cuisines.</p>
-                            </div>
-                        </a>
+
+                <!-- Pusa Basmati Rice -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 product-card">
+                        <div class="product-image-container">
+                            <img src="images/pusa-basmati.jpg" class="card-img-top" alt="Pusa Basmati Rice">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Pusa Basmati Rice</h3>
+                            <p class="card-text">Classic basmati with medium-long grains and rich aroma. Known for consistent quality in domestic and international markets.</p>
+                            <a href="#contact" class="btn btn-outline-primary">Inquire Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card h-100">
-                        <a href="#white-sella" class="text-decoration-none text-dark">
-                            <div class="product-body text-center p-4">
-                                <h5 class="product-title">White Sella Rice</h5>
-                                <p class="product-text">A parboiled rice that remains separate and fluffy after cooking.</p>
+
+                <!-- Lachkari Kolam Rice -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 product-card">
+                        <div class="product-image-container">
+                            <img src="images/lach.jpg" class="card-img-top" alt="Lachkari Kolam Rice">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Lachkari Kolam Rice <small class="d-block text-muted">مﻻﻮﻛ ريﺎﻜﺷﻻ أرز</small></h3>
+                            <p class="card-text">A lightweight, medium-grain rice with a soft texture and mild aroma. Perfect for South Indian cuisine like pongal, idli, dosa, and steamed rice dishes.</p>
+                            <div class="variants small text-muted mb-2">
+                                <div class="mb-1"><strong>RAW:</strong> Naturally processed with soft grains and subtle aroma</div>
+                                <div><strong>STEAM:</strong> Processed for better shelf life and fluffier texture</div>
                             </div>
-                        </a>
+                            <a href="#contact" class="btn btn-outline-primary mt-auto">Inquire Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card h-100">
-                        <a href="#parboiled" class="text-decoration-none text-dark">
-                            <div class="product-body text-center p-4">
-                                <h5 class="product-title">Parboiled Rice</h5>
-                                <p class="product-text">Partially boiled in the husk, retaining more nutrients from the bran.</p>
-                            </div>
-                        </a>
+
+                <!-- Sona Masoori Rice -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 product-card">
+                        <div class="product-image-container">
+                            <img src="images/maso.jpg" class="card-img-top" alt="Sona Masoori Rice">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Sona Masoori Rice <small class="d-block text-muted">ريﻮﺳﺎﻣ ﺎﻧﻮﺳ أرز</small></h3>
+                            <p class="card-text">India's premium rice, highly sought-after for its exceptional aroma, extra-long grains, and unmatched taste. Specially preferred by South Indian & Sri Lankan communities.</p>
+                            <a href="#contact" class="btn btn-outline-primary mt-auto">Inquire Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Spices & Powders -->
-            <h2 class="fw-bold text-center mt-5 mb-4">Our Spice Selection</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card h-100">
-                        <a href="#turmeric" class="text-decoration-none text-dark">
-                            <div class="product-body text-center p-4">
-                                <h5 class="product-title">Turmeric Fingers & Powder</h5>
-                                <p class="product-text">Vibrant and healthy, available in both whole finger and fine powder forms.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card h-100">
-                        <a href="#cumin" class="text-decoration-none text-dark">
-                            <div class="product-body text-center p-4">
-                                <h5 class="product-title">Cumin Seeds</h5>
-                                <p class="product-text">Aromatic seeds that add a warm, earthy flavor to any dish.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card h-100">
-                        <a href="#coriander" class="text-decoration-none text-dark">
-                            <div class="product-body text-center p-4">
-                                <h5 class="product-title">Coriander Seeds</h5>
-                                <p class="product-text">Offers a mild, sweet, and citrusy flavor, essential for many cuisines.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card h-100">
-                        <a href="#chilli" class="text-decoration-none text-dark">
-                            <div class="product-body text-center p-4">
-                                <h5 class="product-title">Red & Green Chilli</h5>
-                                <p class="product-text">Providing the perfect level of heat, available in various forms.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card h-100">
-                        <a href="#other-spices" class="text-decoration-none text-dark">
-                            <div class="product-body text-center p-4">
-                                <h5 class="product-title">Other Indian Spices</h5>
-                                <p class="product-text">We can source a wide variety of other authentic Indian spices upon request.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
-
-    <!-- Footer -->
-    <footer class="footer bg-dark text-white pt-5 pb-4">
+    <!-- Spices Section -->
+    <section id="spices" class="py-5">
         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Premium Spices</h2>
+                <div class="title-divider"></div>
+                <p class="lead">Authentic Indian spices that bring flavor and aroma to global cuisines</p>
+            </div>
+
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h5 class="fw-bold mb-3">AQIZO INTERNATIONAL</h5>
-                    <p>Your trusted partner in exporting premium quality agricultural products. We connect the fields of India to the markets of the world.</p>
+                <!-- Cumin -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="card h-100 product-card" data-category="spice">
+                        <div class="product-image-container">
+                            <img src="images/1023.jpg" class="card-img-top" alt="Indian Cumin">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Indian Cumin <small class="d-block text-muted">كمون هندي</small></h3>
+                            <p class="card-text">Aromatic cumin seeds with a warm, earthy flavor and strong essential oil content. Essential in Indian spice blends and global cuisine.</p>
+                            <div class="small text-muted mb-2">
+                                <div>Known for enhancing flavor and aiding digestion, Indian cumin is highly demanded across international markets.</div>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-primary mt-auto">Inquire Now</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-2 mb-4">
-                    <h5 class="fw-bold mb-3">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html#about" class="footer-link">About Us</a></li>
-                        <li><a href="products.html" class="footer-link">Products</a></li>
-                        <li><a href="index.html#contact" class="footer-link">Contact</a></li>
-                    </ul>
+
+                <!-- Sesame Seeds -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 product-card" data-category="spice">
+                        <div class="product-image-container">
+                            <img src="images/1927.jpg" class="card-img-top" alt="Sesame Seeds">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Sesame Seeds <small class="d-block text-muted">سمسم</small></h3>
+                            <p class="card-text">Rich in oil and nutty in flavor. Our high-quality Sesame Seeds are clean, uniform, and packed with nutrients.</p>
+                            <div class="variants small text-muted mb-2">
+                                <div class="mb-1"><strong>WHITE SESAME SEEDS:</strong> Mild, nutty flavor with a light color. Rich in calcium and healthy fats.</div>
+                                <div><strong>BLACK SESAME SEEDS:</strong> Stronger flavor, higher oil content, and known for antioxidant properties.</div>
+                            </div>
+                            <a href="#contact" class="btn btn-outline-primary mt-auto">Inquire Now</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 mb-4">
-                    <h5 class="fw-bold mb-3">Our Products</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="products.html" class="footer-link">Rice Varietals</a></li>
-                        <li><a href="products.html" class="footer-link">Spices & Powders</a></li>
-                    </ul>
+
+                <!-- Red Chilli Powder -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 product-card" data-category="chilli">
+                        <div class="product-image-container">
+                            <img src="images/chilli-powder.jpg" class="card-img-top" alt="Red Chilli Powder">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Red Chilli Powder</h3>
+                            <div class="chilli-tags">
+                                <span class="chilli-tag">Hot</span>
+                                <span class="chilli-tag">Aromatic</span>
+                                <span class="chilli-tag">Versatile</span>
+                            </div>
+                            <p class="card-text">Vibrant color, bold flavor. Made from carefully selected sun-dried chillies, it's pure, aromatic, and packed with natural spice.</p>
+                            <a href="#contact" class="btn btn-outline-primary mt-auto">Inquire Now</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 mb-4">
-                    <h5 class="fw-bold mb-3">Contact Info</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Gujarat, India</li>
-                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +91 84870 27771</li>
-                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@aqizointernational.com</li>
-                    </ul>
+
+                <!-- Green Chilli -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 product-card" data-category="chilli">
+                        <div class="product-image-container">
+                            <img src="images/green-chilli.jpg" class="card-img-top" alt="Green Chilli">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Green Chilli</h3>
+                            <p class="card-text">Fresh green chilies known for their sharp, crisp flavor and vibrant color. A staple in Indian cuisine.</p>
+                            
+                            <div class="variants small">
+                                <div class="mb-2"><strong>Popular Varieties:</strong></div>
+                                <div class="mb-2"><strong>Guntur Sannam:</strong> Medium pungency with a bright red hue, ideal for rich color and flavor in global recipes.</div>
+                                <div><strong>Teja Chilli:</strong> Highly pungent and bold, widely used in spicy dishes across modern kitchens and traditional cuisines.</div>
+                            </div>
+                            
+                            <div class="chilli-tags mt-2">
+                                <span class="chilli-tag">Hot</span>
+                                <span class="chilli-tag">Fresh</span>
+                                <span class="chilli-tag">Versatile</span>
+                            </div>
+                            
+                            <a href="#contact" class="btn btn-outline-primary mt-3">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Turmeric -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 product-card" data-category="spice">
+                        <div class="product-image-container">
+                            <img src="images/turmeric.jpg" class="card-img-top" alt="Turmeric">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Turmeric</h3>
+                            <p class="card-text">Golden-yellow turmeric with high curcumin content, valued for its color, aroma, and natural medicinal properties.</p>
+                            <a href="#contact" class="btn btn-outline-primary mt-auto">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chilli -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 product-card">
+                        <div class="product-image-container">
+                            <img src="images/chilli.jpg" class="card-img-top" alt="Chillies">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Chillies</h3>
+                            <p class="card-text">Premium quality red and green chillies that add the perfect heat to any dish, sourced from the finest farms.</p>
+                            <a href="#contact" class="btn btn-outline-primary">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coriander -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 product-card">
+                        <div class="product-image-container">
+                            <img src="images/coriander.jpg" class="card-img-top" alt="Coriander">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Coriander</h3>
+                            <p class="card-text">Fragrant coriander seeds and powder, essential for adding depth of flavor to a variety of dishes.</p>
+                            <a href="#contact" class="btn btn-outline-primary">Inquire Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="p-3 mb-3 bg-white rounded shadow-sm">
+                                    <h6 class="fw-bold">Red Chilli Powder</h6>
+                                    <p class="small mb-0">Vibrant color, bold flavor. Made from carefully selected sun-dried chillies, it's pure, aromatic, and packed with natural spice.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 mb-3 bg-white rounded shadow-sm">
+                                    <h6 class="fw-bold">Green Chilli</h6>
+                                    <p class="small mb-0">Fresh green chilies known for their sharp, crisp flavor and vibrant color. A staple in Indian cuisine.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-4 rounded bg-light">
+                        <h5><i class="fas fa-star text-warning me-2"></i>Popular Varieties:</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><strong>Guntur Sannam:</strong> Medium pungency with a bright red hue, ideal for rich color and flavor in global recipes.</li>
+                            <li class="mb-2"><strong>Teja Chilli:</strong> Highly pungent and bold, widely used in spicy dishes across modern kitchens and traditional cuisines alike.</li>
+                        </ul>
+                        <div class="mt-3">
+                            <span class="badge bg-danger me-2">Hot</span>
+                            <span class="badge bg-danger me-2">Aromatic</span>
+                            <span class="badge bg-danger">Versatile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h3 class="mb-4">Ready to Experience Premium Quality?</h3>
+                    <p class="lead mb-4">Contact us today to discuss your requirements or request a sample of our products.</p>
+                    <a href="index.html#contact" class="btn btn-light btn-lg px-4 me-3">Get a Quote</a>
+                    <a href="tel:+918487027771" class="btn btn-outline-light btn-lg px-4">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <img src="images/logo.png" alt="AQIZO International Logo" style="height: 40px;" class="mb-2">
+                    </h6>
+                    <p>Exporting premium quality rice and spices worldwide with a commitment to excellence, authenticity, and customer satisfaction.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Quick Links</h6>
+                    <p><a href="index.html" class="text-white">Home</a></p>
+                    <p><a href="index.html#about" class="text-white">About Us</a></p>
+                    <p><a href="products.html" class="text-white">Products</a></p>
+                    <p><a href="index.html#contact" class="text-white">Contact</a></p>
+                </div>
+
+                <!-- Products -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Our Products</h6>
+                    <p><a href="#rice" class="text-white">Rice Varieties</a></p>
+                    <p><a href="#spices" class="text-white">Spices</a></p>
+                    <p><a href="#" class="text-white">Export Quality</a></p>
+                    <p><a href="#" class="text-white">Bulk Orders</a></p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> Gujarat, India</p>
+                    <p><i class="fas fa-envelope me-3"></i> aqizointernational11@gmail.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +91 84870 27771</p>
+                    <p><i class="fas fa-phone me-3"></i> +91 94087 27771</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2025 Copyright:
+            <a class="text-white" href="#">AQIZO International</a>
             <div class="text-center mt-4">
                 <p>&copy; 2025 AQIZO International. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            });
+            
+            // Back to top button
+            var backToTop = document.createElement('a');
+            backToTop.href = '#';
+            backToTop.className = 'back-to-top';
+            backToTop.innerHTML = '<i class="fas fa-arrow-up"></i>';
+            document.body.appendChild(backToTop);
+
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add('active');
+                } else {
+                    backToTop.classList.remove('active');
+                }
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
